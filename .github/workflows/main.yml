@@ -7,6 +7,10 @@ jobs:
     name: TUe CI - ${{ github.event_name }}
     runs-on: ubuntu-latest
     steps:
+      - name: echo
+        run : |
+          echo "GITHUB_BASE_REF: $GITHUB_BASE_REF"
+          echo "GITHUB_HEAD_REF: $GITHUB_HEAD_REF"
       - name: TUe CI
         uses: tue-robotics/tue-env/ci/main@fix/ci
         with:
