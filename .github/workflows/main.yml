@@ -36,6 +36,6 @@ jobs:
           MATRIX_CONTEXT: ${{ toJSON(matrix) }}
         run: echo "$MATRIX_CONTEXT"
       - name: TUe CI
-        uses: tue-robotics/tue-env/ci/main@fix/ci
+        uses: tue-robotics/tue-env/ci/main@master
         with:
           package: ${{ github.event.repository.name }}
